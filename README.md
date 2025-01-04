@@ -78,6 +78,7 @@ https://github.com/juarendra/Zeapad-Pro-QMK-VIA/assets/43043633/afd7e68e-0a54-4b
 
 ## Cara Compile Firmware
 pada folder new_sofle terdapat 2 keymaps, Copy semua isi folder tersebut ke folder qmk_firmware/keyboard/sofle
+
 **VIA Keymaps**
 keymaps ini adalah keymaps yang normal digunakan dengan feature seperti berikut
 - VIA enable
@@ -88,6 +89,7 @@ keymaps ini adalah keymaps yang normal digunakan dengan feature seperti berikut
 - layer 4
 - OLED standar with logo yin and yang
 - WPM display on OLED
+
 **Pet Keymaps**
 - VIA enable
 - RGB underglow Disable 
