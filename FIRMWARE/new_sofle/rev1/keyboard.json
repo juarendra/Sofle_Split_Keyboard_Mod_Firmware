@@ -1,8 +1,8 @@
 {
-    "keyboard_name": "Sofle",
-    "manufacturer": "JosefAdamcik",
-    "url": "https://github.com/josefadamcik/SofleKeyboard",
-    "maintainer": "Josef Adamcik <josef.adamcik@gmail.com>",
+    "keyboard_name": "Sofle_PositronElectronics",
+    "manufacturer": "PositronElectronics",
+    "url": "https://github.com/juarendra/Sofle_Split_Keyboard_Mod_Firmware",
+    "maintainer": "juarendra",
     "usb": {
         "vid": "0xFC32",
         "pid": "0x0287",
@@ -15,21 +15,64 @@
     "diode_direction": "COL2ROW",
     "encoder": {
         "rotary": [
-            {"pin_a": "F5", "pin_b": "F4", "resolution": 4}
+            {"pin_a": "F4", "pin_b": "F5", "resolution": 2}
         ]
     },
     "split": {
-        "soft_serial_pin": "D2",
+        "enabled": true,
+        "serial": {
+            "pin": "D2"
+        },
         "encoder": {
             "right": {
                 "rotary": [
-                    {"pin_a": "F4", "pin_b": "F5", "resolution": 4}
+                    {"pin_a": "F4", "pin_b": "F5", "resolution": 2}
                 ]
             }
+        },
+        "transport": {
+            "sync": {
+                "wpm": true
+            }
+        }
+    },
+    "tapping": {
+        "term": 100
+    },
+    "qmk": {
+        "tap_keycode_delay": 10
+    },
+    "ws2812": {
+        "pin": "D3"
+    },
+    "rgblight": {
+        "led_count": 24,
+        "max_brightness": 120,
+        "split": true,
+        "animations": {
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "snake": true,
+            "knight": true,
+            "christmas": true,
+            "static_gradient": true,
+            "rgb_test": true,
+            "alternating": true,
+            "twinkle": true
         }
     },
     "processor": "atmega32u4",
     "bootloader": "caterina",
+        "features": {
+        "bootmagic": false,
+        "mousekey": false,
+        "extrakey": false,
+        "swap_hands": false,
+        "encoder": true,
+        "oled": true,
+        "rgblight": true
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
